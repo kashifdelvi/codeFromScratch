@@ -8,7 +8,7 @@ let db;
 
 
 app.listen(process.env.PORT ||  3000, function() {
-    console.log('listening on port ');
+    console.log('listening on port'+ process.env.PORT);
     const MongoClient = require('mongodb').MongoClient;
     console.log('connecting to DB');
     const uri = 'mongodb+srv://test:test@cluster0.3y4wxfh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
