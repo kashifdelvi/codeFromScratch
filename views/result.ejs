@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Data from MongoDB</h2>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Mobile Number</th>
+    <th>Qualification</th>
+  </tr>
+  <% data.forEach(item => { %>
+    <tr>
+      <td><%= item.name %></td>
+      <td><%= item.mobile %></td>
+      <td><%= item.qualification %></td>
+    </tr>
+  <% }); %>
+</table>
+
+</body>
+</html>

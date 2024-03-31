@@ -7,11 +7,11 @@ app.use(express.urlencoded({ extended: true })); // for parsing application/x-ww
 let db;
 
 
-app.listen(3000, function() {
+app.listen(80, function() {
     console.log('listening on 3000');
     const MongoClient = require('mongodb').MongoClient;
     console.log('connecting to DB');
-    const uri = 'mongodb+srv://test:test@cluster0.3y4wxfh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
+    const uri = 'mongodb+srv://test:test@cluster0.3y4wxfh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
     const client = new MongoClient(uri);
     db = client.db('test');
     console.log('connected to DB');
