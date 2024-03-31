@@ -7,8 +7,8 @@ app.use(express.urlencoded({ extended: true })); // for parsing application/x-ww
 let db;
 
 
-app.listen(8080, function() {
-    console.log('listening on 8080');
+app.listen(process.env.PORT ||  3000, function() {
+    console.log('listening on port ');
     const MongoClient = require('mongodb').MongoClient;
     console.log('connecting to DB');
     const uri = 'mongodb+srv://test:test@cluster0.3y4wxfh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
