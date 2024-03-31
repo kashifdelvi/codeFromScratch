@@ -7,7 +7,7 @@ app.use(express.urlencoded({ extended: true })); // for parsing application/x-ww
 let db;
 
 
-app.listen(80, function() {
+app.listen(8080, function() {
     console.log('listening on 3000');
     const MongoClient = require('mongodb').MongoClient;
     console.log('connecting to DB');
