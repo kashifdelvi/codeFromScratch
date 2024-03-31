@@ -8,7 +8,7 @@ let db;
 
 
 app.listen(8080, function() {
-    console.log('listening on 3000');
+    console.log('listening on 8080');
     const MongoClient = require('mongodb').MongoClient;
     console.log('connecting to DB');
     const uri = 'mongodb+srv://test:test@cluster0.3y4wxfh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
